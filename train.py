@@ -117,9 +117,6 @@ def create_training_options():
 
 def main(opt):
     log = Logger(opt.global_rank, opt.log_dir)
-    log.info("=======================================================")
-    log.info("         Image-to-Image Schrodinger Bridge")
-    log.info("=======================================================")
     log.info("Command used:\n{}".format(" ".join(sys.argv)))
     log.info(f"Experiment ID: {opt.name}")
 
@@ -129,8 +126,8 @@ def main(opt):
 
     # build imagenet dataset
 
-    train_dataset = HCP_loader2.HCPVolumes(opt.train_dataset_dir, opt.val_dataset_dir,mode='train')
-    val_dataset   = HCP_loader2.HCPVolumes(opt.train_dataset_dir, opt.val_dataset_dir,mode='val')
+    train_dataset = 
+    val_dataset   = 
 
     # note: images should be normalized to [-1,1] for corruption methods to work properly
 
