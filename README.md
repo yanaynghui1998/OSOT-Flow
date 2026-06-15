@@ -2,7 +2,7 @@
 
 Official PyTorch implementation of the IEEE TMI paper "One-Step Optimal Transport Flow for Anisotropic MRI Super-Resolution". The complete code will be released upon publication of the paper.
 
-**Appendix** is available at: [![Appendix](https://img.shields.io/badge/Appendix-PDF-blue)](https://yanaynghui1998.github.io/OSOT-Flow/appendix/Appendix_TMI.pdf)
+**Appendix** is available at: [![Appendix](https://img.shields.io/badge/Appendix-PDF-blue)](https://yanaynghui1998.github.io/OSOT-Flow/appendix/Appendix(TMI).pdf)
 
 We provide .gif and .mp4 files of super-resolution results ($R$=7) in the "figs" folder. We recommend downloading the .mp4 file for easier frame-by-frame viewing. Examples of the generated MR and CT volumes via one-step generation:
 
