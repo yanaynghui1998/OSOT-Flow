@@ -25,7 +25,6 @@ from distributed_util import init_processes
 from corruption import build_corruption
 from dataset import imagenet
 from i2sb_onestep import Runner, download_ckpt
-from dataset import HCP_loader2
 
 # import colored_traceback.always
 # from ipdb import set_trace as debug
@@ -120,9 +119,6 @@ def create_training_options():
 
 def main(opt):
     log = Logger(opt.global_rank, opt.log_dir)
-    log.info("=======================================================")
-    log.info("         Image-to-Image Schrodinger Bridge")
-    log.info("=======================================================")
     log.info("Command used:\n{}".format(" ".join(sys.argv)))
     log.info(f"Experiment ID: {opt.name}")
 
@@ -131,8 +127,8 @@ def main(opt):
         set_seed(opt.seed + opt.global_rank)
 
     # build imagenet dataset
-    train_dataset = HCP_loader2.OASISVolumes(opt.train_dataset_dir, opt.val_dataset_dir,mode='train')
-    val_dataset   = HCP_loader2.OASISVolumes(opt.train_dataset_dir, opt.val_dataset_dir,mode='val')
+    train_dataset = 
+    val_dataset   = 
     # note: images should be normalized to [-1,1] for corruption methods to work properly
 
     if opt.corrupt == "mixture":
